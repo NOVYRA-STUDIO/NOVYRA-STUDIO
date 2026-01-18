@@ -19,4 +19,12 @@ cards.forEach(card => {
 
 const sections = document.querySelectorAll('.section');
 
-const
+const sectionObserver = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.15 });
+
+sections.forEach(sec => sectionObserver.observe(sec));
