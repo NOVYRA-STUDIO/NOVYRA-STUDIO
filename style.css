@@ -202,31 +202,25 @@ footer {
   -ms-user-select: none;
 }
 
+
+
+
 .platforms {
   display: flex;
-  gap: 10px;
-  padding: 0 12px 6px;
+  gap: 12px;
+  padding: 0 12px 8px;
 }
 
 .platform {
-  font-size: 1.2rem;
-  opacity: 0.7;
-  transition: transform 0.3s, opacity 0.3s;
-  cursor: default;
+  width: 22px;
+  height: 22px;
+  color: #aaa;
+  opacity: 0.75;
+  transition: transform 0.3s, color 0.3s, opacity 0.3s;
 }
 
 .project-card:hover .platform {
   opacity: 1;
-}
-
-.project-card:hover .platform.android {
-  transform: scale(1.15) rotate(-5deg);
-}
-
-.project-card:hover .platform.windows {
+  color: #fff;
   transform: scale(1.15);
-}
-
-.project-card:hover .platform.mac {
-  transform: scale(1.15) rotate(5deg);
 }
