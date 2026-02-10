@@ -72,6 +72,10 @@ function renderProjects() {
                         <span class="date-label">Оновлено:</span>
                         <span>${project.updated}</span>
                     </div>
+                    <div class="date-row">
+                        <span class="date-label">Версія:</span>
+                        <span>${project.version}</span>
+                    </div>
                 </div>
             </div>
         `;
@@ -182,6 +186,9 @@ function showProjectDetail(projectId) {
                 </div>
                 <div class="meta-item">
                     <span>Оновлено: ${project.updated}</span>
+                </div>
+                <div class="meta-item">
+                    <span>Версія: ${project.version}</span>
                 </div>
             </div>
             <p class="project-detail-description">${project.description}</p>
